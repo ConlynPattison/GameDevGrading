@@ -53,7 +53,7 @@ const GradeSummary = () => {
             </section>
             <section className={styles.column}>
                 <h3>Extra</h3>
-                <input type="number" value={extra} max={5} min={0} onChange={handleExtraChange} />
+                <input className={styles.open} type="number" value={extra} max={5} min={0} onChange={handleExtraChange} />
             </section>
             <section className={styles.column}>
                 <h3>Git Issues</h3>

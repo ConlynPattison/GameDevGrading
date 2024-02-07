@@ -2,9 +2,9 @@ import GradeSummary from "./components/GradeSummary";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header>
-        <h1>Pong Part 1</h1>
+        <h1>Grading: Pong Part 1</h1>
       </header>
       <h2>
         Student Name: <input type="text" />
