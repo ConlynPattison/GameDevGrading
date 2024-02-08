@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <header>
-        <h1>Grading: Pong Part 1</h1>
+        <h1>Grading: Pong Part 2</h1>
       </header>
       <h2>
         Student Name: <input type="text" />
