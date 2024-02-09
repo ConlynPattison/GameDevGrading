@@ -1,4 +1,4 @@
-import GradeSummary from "./components/GradeSummary";
+import PongPart2 from "./components/PongPart2";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <h2>
         Student Name: <input type="text" />
       </h2>
-      <GradeSummary />
+      <PongPart2 />
     </div>
   );
 }
