@@ -26,7 +26,7 @@ const PongPart1 = () => {
 
 	const handleCheck = (event) => {
 		const value = Number(event.target.value);
-		setChecked((prevInvalid) => prevInvalid + (event.target.checked ? value : -value));
+		setChecked((prevChecked) => prevChecked + (event.target.checked ? value : -value));
 	}
 
 	return (
