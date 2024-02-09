@@ -36,6 +36,12 @@ const PongPart2 = () => {
 
 	return (
 		<div>
+			<header>
+				<h1>Grading: Pong Part 2</h1>
+			</header>
+			<h2>
+				Student Name: <input type="text" />
+			</h2>
 			<section className={styles.column}>
 				<h3>Sound</h3>
 				<label><input type="radio" name="sound" value={7} onChange={handleSoundChange} /> One Paddle Sound </label>

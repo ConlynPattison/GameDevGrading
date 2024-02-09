@@ -1,15 +1,27 @@
-import PongPart2 from "./components/PongPart2";
+import PongPart2 from "./routes/PongPart2";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./routes/Home";
+import PongPart1 from "./routes/PongPart1";
 
-function App() {
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Home/>
+	},
+	{
+		path: "pong1",
+		element: <PongPart1/>
+	},
+	{
+		path: "pong2",
+		element: <PongPart2/>
+	}
+])
+
+const App = () => {
   return (
     <div>
-      <header>
-        <h1>Grading: Pong Part 2</h1>
-      </header>
-      <h2>
-        Student Name: <input type="text" />
-      </h2>
-      <PongPart2 />
+      <RouterProvider router={router} />
     </div>
   );
 }
