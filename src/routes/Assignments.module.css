@@ -6,3 +6,12 @@
 .open {
   width: 50px;
 }
+
+.link {
+	text-decoration: underline;
+  color:blue;
+}
+
+.link :hover {
+  cursor: pointer;
+}

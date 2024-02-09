@@ -1,6 +1,15 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import styles from "./Assignments.module.css"
+
 const Home = () => {
+	const navigate = useNavigate();
+
 	return (
-		<div> Grading App Home </div>
+		<div className={styles.link}>
+			<p onClick={() => navigate("pong1")}> Pong Part 1 </p>
+			<p onClick={() => navigate("pong2")}> Pong Part 2 </p>
+		</div>
 	)
 }
 
