@@ -33,8 +33,8 @@ const PlatformerPart1 = () => {
             </section>
             <section className={styles.column}>
                 <h3>Materials</h3>
-                <label><input type="checkbox" name="materials" value={5} onChange={handleCheck} /> Custom material assigned to each block type </label>
-                <label><input type="checkbox" name="materials" value={5} onChange={handleCheck} /> Assigning a single texture to each material </label>
+                <label><input type="checkbox" name="materials" value={5} onChange={handleCheck} /> Assigning a custom material to each type of block (e.g., rock, brick, ‘?’) </label>
+                <label><input type="checkbox" name="materials" value={5} onChange={handleCheck} /> Use material tiling and offset to show a single tile from the given multi-tile ‘?’ texture instead of one that only contains a single tile </label>
             </section>
             <section className={styles.column}>
                 <h3>GUI</h3>
