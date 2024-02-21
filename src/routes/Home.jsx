@@ -9,7 +9,7 @@ const Home = () => {
 		<div className={styles.link}>
 			<p onClick={() => navigate("pong1")}> Pong Part 1 </p>
 			<p onClick={() => navigate("pong2")}> Pong Part 2 </p>
-			<p onClick={() => navigate("platformer1")}> Platformer Part 2 </p>
+			<p onClick={() => navigate("platformer1")}> Platformer Part 1 </p>
 		</div>
 	)
 }
