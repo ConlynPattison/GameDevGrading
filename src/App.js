@@ -3,32 +3,37 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./routes/Home";
 import PongPart1 from "./routes/PongPart1";
 import PlatformerPart1 from "./routes/PlatformerPart1";
+import PlatformerPart2 from "./routes/PlatformerPart2";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <Home/>
+		element: <Home />
 	},
 	{
 		path: "pong1",
-		element: <PongPart1/>
+		element: <PongPart1 />
 	},
 	{
 		path: "pong2",
-		element: <PongPart2/>
+		element: <PongPart2 />
 	},
 	{
 		path: "platformer1",
-		element: <PlatformerPart1/>
+		element: <PlatformerPart1 />
+	},
+	{
+		path: "platformer2",
+		element: <PlatformerPart2 />
 	}
 ])
 
 const App = () => {
-  return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
-  );
+	return (
+		<div>
+			<RouterProvider router={router} />
+		</div>
+	);
 }
 
 export default App;

@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useRoutes } from "react-router-dom";
 import styles from "./Assignments.module.css"
 
 const Home = () => {
@@ -10,6 +10,7 @@ const Home = () => {
 			<p onClick={() => navigate("pong1")}> Pong Part 1 </p>
 			<p onClick={() => navigate("pong2")}> Pong Part 2 </p>
 			<p onClick={() => navigate("platformer1")}> Platformer Part 1 </p>
+			<p onClick={() => navigate("platformer2")}> Platformer Part 2 </p>
 		</div>
 	)
 }
