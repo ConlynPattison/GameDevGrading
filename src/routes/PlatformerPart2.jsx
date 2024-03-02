@@ -56,7 +56,7 @@ const PlatformerPart2 = () => {
 				<ul>
 					<li>+1 Add apex modifiers</li>
 					<li>+1 Coyote Time</li>
-					<li>+1 Add jump buffering (> 1 frame or within 67ms)</li>
+					<li>+1 Add jump buffering (&gt; 1 frame or within 67ms)</li>
 					<li>+3 Add edge detection and nudging</li>
 					<li>+1 Add a movement feature from a platformer you like (e.g. Hollow Knight)</li>
 					<li>Other creative twists</li>
