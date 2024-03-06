@@ -4,6 +4,8 @@ import Home from "./routes/Home";
 import PongPart1 from "./routes/PongPart1";
 import PlatformerPart1 from "./routes/PlatformerPart1";
 import PlatformerPart2 from "./routes/PlatformerPart2";
+import SpaceInvadersPart1 from "./routes/SpaceInvadersPart1";
+
 
 const router = createBrowserRouter([
 	{
@@ -25,6 +27,10 @@ const router = createBrowserRouter([
 	{
 		path: "platformer2",
 		element: <PlatformerPart2 />
+	},
+	{
+		path: "space-invaders1",
+		element: <SpaceInvadersPart1 />
 	}
 ])
 
