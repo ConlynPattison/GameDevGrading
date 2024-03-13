@@ -5,11 +5,10 @@ const SpaceInvadersPart2 = () => {
 	const [sum, setSum] = useState(0);
 	const [extra, setExtra] = useState(0);
 	const [checked, setChecked] = useState(0);
-	const [scoreVal, setScoreVal] = useState(0);
 
 	useEffect(() => {
-		setSum(checked + extra + scoreVal);
-	}, [checked, extra, scoreVal])
+		setSum(checked + extra);
+	}, [checked, extra])
 
 	const handleExtraChange = (event) => {
 		setExtra(Number(event.target.value));
@@ -20,45 +19,48 @@ const SpaceInvadersPart2 = () => {
 		setChecked((prevChecked) => prevChecked + (event.target.checked ? value : -value));
 	}
 
-	const handleScoreVal = (event) => {
-		setScoreVal(Number(event.target.value));
-	}
-
 	return (
 		<div>
 			<header>
-				<h1>Grading: Space Invaders Part 1</h1>
+				<h1>Grading: Space Invaders Part 2</h1>
 			</header>
 			<h2>
 				Student Name: <input type="text" />
 			</h2>
 			<section className={styles.column}>
-				<h3>GUI</h3>
-				<text>Implement the GUI on the of the picture below and keep track of the score of the player. The high score for that session will need to be implemented as well.</text>
-				<label><input type="checkbox" name="gui" value={3} onChange={handleCheck} /> Keeping track of the current score </label>
-				<label><input type="checkbox" name="gui" value={5} onChange={handleCheck} /> Keeping track of the session's high score (instead of when you restart the app it goes back to 0) </label>
-				<label><input type="checkbox" name="gui" value={2} onChange={handleCheck} /> Format the string of numbers to give leading zeros when the score hasn't gotten there yet (i.e, 0040 vs 40) </label>
+				<h3>Scenes</h3>
+				<text>Implement three scenes and switch between them (should be handled in a “Game Manager” class and use “DontDestroyOnLoad”)</text>
+				<label><input type="checkbox" name="scenes" value={3} onChange={handleCheck} /> Start button takes from Main Menu to Main Game scene </label>
+				<label><input type="checkbox" name="scenes" value={3} onChange={handleCheck} /> Start screen has enemies with their idle animations </label>
+				<label><input type="checkbox" name="scenes" value={3} onChange={handleCheck} /> Have Main Game transition to credits scene after dying </label>
+				<label><input type="checkbox" name="scenes" value={1} onChange={handleCheck} /> Have credits scene play for 5 seconds then switch back to Main Menu </label>
 			</section>
 			<section className={styles.column}>
-				<h3>Scoring</h3>
-				<text>Implement a scoring system (can be the one featured above) that has different values depending on the enemy that you kill (4 different types). </text>
-				<label><input type="number" name="score" value={scoreVal} onChange={handleScoreVal} min={0} max={10} step={2.5} />  </label>
+				<h3>Animations</h3>
+				<text> Animate 2D objects with animations (2 or more sprites each) </text>
+				<label><input type="checkbox" name="animations" value={2} onChange={handleCheck} /> Idle player animation </label>
+				<label><input type="checkbox" name="animations" value={2} onChange={handleCheck} /> Shooting player animation </label>
+				<label><input type="checkbox" name="animations" value={2} onChange={handleCheck} /> Exploding player animation </label>
+				<label><input type="checkbox" name="animations" value={2} onChange={handleCheck} /> Enemy idle animation </label>
+				<label><input type="checkbox" name="animations" value={2} onChange={handleCheck} /> Exploding enemy animation </label>
 			</section>
 			<section className={styles.column}>
-				<h3>Space Invader Logic</h3>
-				<text>The enemies are on a continuous path towards intercepting the player (sideways and down), the enemy (as a group) speeds up when there are fewer enemies as you destroy them with your bullets, and you have a barricade that gets smaller in size as bullets hit it. </text>
-				<label><input type="checkbox" name="logic" value={2} onChange={handleCheck} /> Enemies continuous travel towards the player (not directly straight at the player) </label>
-				<label><input type="checkbox" name="logic" value={2} onChange={handleCheck} /> Enemies as a group speed up as more are destroyed </label>
-				<label><input type="checkbox" name="logic" value={2} onChange={handleCheck} /> Your bullets destroy the enemy and your barricade if you hit it </label>
-				<label><input type="checkbox" name="logic" value={2} onChange={handleCheck} /> Enemies periodically fire bullets that kill you (right now it can be any enemy on the screen) </label>
-				<label><input type="checkbox" name="logic" value={2} onChange={handleCheck} /> Enemies bullets can destroy your barricades </label>
+				<h3>Sound</h3>
+				<label><input type="checkbox" name="sound" value={1} onChange={handleCheck} /> Shooting sound for Player </label>
+				<label><input type="checkbox" name="sound" value={1} onChange={handleCheck} /> Shooting sound for Enemy </label>
+				<label><input type="checkbox" name="sound" value={1} onChange={handleCheck} /> Blow up sound for Player </label>
+				<label><input type="checkbox" name="sound" value={1} onChange={handleCheck} /> Blow up sound for Enemy </label>
+				<label><input type="checkbox" name="sound" value={1} onChange={handleCheck} /> Background music/sounds </label>
 			</section>
-
 			<section className={styles.column}>
+				<h3>Particle Effects</h3>
+				<label><input type="checkbox" name="particle-effects" value={5} onChange={handleCheck} /> Added particle effects where they fit </label>
+			</section>
+			{/* <section className={styles.column}>
 				<h3>Extra</h3>
 				<text>Make it feel good.</text>
 				<input className={styles.open} type="number" value={extra} max={5} min={0} onChange={handleExtraChange} />
-			</section>
+			</section> */}
 			<section className={styles.column}>
 				<h3>Git Issues</h3>
 				<label><input type="checkbox" name="git" value={-1.5} onChange={handleCheck} /> Invalid GitHub Link </label>
