@@ -61,6 +61,13 @@ const TowerDefensePart3 = () => {
 				<label><input type="checkbox" name="camera" value={10} onChange={handleCheck} /> Completed </label>
 			</section>
 			<section className={styles.column}>
+				<h3>Bonus</h3>
+				<text>
+					For extra credit, complete the shader-based laser effect as demoed in Extras.
+				</text>
+				<label><input type="checkbox" name="camera" value={5} onChange={handleCheck} /> Completed </label>
+			</section>
+			<section className={styles.column}>
 				<h3>Git Issues</h3>
 				<label><input type="checkbox" name="git" value={-1.5} onChange={handleCheck} /> Invalid GitHub Link </label>
 				<label><input type="checkbox" name="git" value={-1.5} onChange={handleCheck} /> Nonfunctional/Empty Repo </label>
