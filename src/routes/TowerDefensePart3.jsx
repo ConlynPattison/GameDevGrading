@@ -42,7 +42,7 @@ const TowerDefensePart3 = () => {
 			<section className={styles.column}>
 				<h3>Navigation</h3>
 				<text>
-					Integrate terrain into the scene. At a minimum, the board should sit on top of a flat part of the terrain and the surrounding area should be geometrically interesting. Ideally, the board should be replaced by terrain so that the tiles are no longer visible but this is not required.
+					Pick One
 				</text>
 				<label><input type="radio" name="navigation" value={10} onChange={handleNavigation} />
 					Replace all of the logic that moves enemies such that it uses the navigation system to plot a path a move from the starting point to the destination.
