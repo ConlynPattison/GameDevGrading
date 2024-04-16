@@ -14,6 +14,7 @@ const Home = () => {
 			<p onClick={() => navigate("space-invaders1")}> Space Invaders Part 1 </p>
 			<p onClick={() => navigate("space-invaders2")}> Space Invaders Part 2 </p>
 			<p onClick={() => navigate("tower-defense1")}> Tower Defense Part 1 </p>
+			<p onClick={() => navigate("tower-defense3")}> Tower Defense Part 3 </p>
 		</div>
 	)
 }

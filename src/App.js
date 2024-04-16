@@ -7,6 +7,7 @@ import PlatformerPart2 from "./routes/PlatformerPart2";
 import SpaceInvadersPart1 from "./routes/SpaceInvadersPart1";
 import SpaceInvadersPart2 from "./routes/SpaceInvadersPart2";
 import TowerDefensePart1 from "./routes/TowerDefensePart1";
+import TowerDefensePart3 from "./routes/TowerDefensePart3";
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
 	{
 		path: "tower-defense1",
 		element: <TowerDefensePart1 />
+	},
+	{
+		path: "tower-defense3",
+		element: <TowerDefensePart3 />
 	}
 ])
 
